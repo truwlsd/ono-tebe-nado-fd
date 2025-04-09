@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px 96px;
+  padding: 91px 49px 96px 50px;
   font-size: 18px;
 }
 
@@ -12,11 +12,14 @@
 }
 
 .address {
-  max-width: 240px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 3px;
+}
+
+.header__address {
+  width: 100%;
+  max-width: 235px;
 }
 
 .address-right {
@@ -32,9 +35,9 @@
 }
 
 ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .header__contacts-list {
@@ -61,38 +64,38 @@ ul {
 
 .underline {
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
 }
 
 .cover {
   position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 180px;
-  background-image: url('../images/cover.jpg');
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
   row-gap: 106px;
+  margin-bottom: 180px;
   padding: 165px 50px 50px;
+  background-image: url('../images/cover.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .cover::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
   z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .cover-title {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   color: white;
   text-transform: uppercase;
-  flex-direction: column;
-  display: flex;
-  row-gap: 20px;
 }
 
 .span-margin {
@@ -116,65 +119,68 @@ ul {
 }
 
 .сover__description {
-  font-weight: normal;
   display: flex;
   justify-content: space-between;
-  color: white;
   align-items: center;
+  color: #ffffff;
+  font-weight: normal;
 }
 
 .cover__description-text {
-  text-transform: uppercase;
   font-size: 22px;
+  text-transform: uppercase;
   word-spacing: 19px;
 }
 
 .place-bet-button {
-  font-size: 22px;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #ffffff;
   padding: 12px 32px 11px 31px;
-  white-space: nowrap;
+  color: #ffffff;
+  font-size: 22px;
   text-align: center;
+  background-color: transparent;
+  white-space: nowrap;
 }
 
 .lots {
-  background: white;
   margin-bottom: 120px;
+  padding: 0px 24px;
 }
 
 .lots__heading {
-  font-size: 40px;
-  font-weight: bold;
   margin-bottom: 27px;
-  padding-left: 64px;
+  margin-left: 40px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 25px;
-  justify-content: center;
+  list-style-type: none;
+
 }
 
 .lots__card-list-item {
-  width: 330px;
-  min-height: 596px;
   position: relative;
   flex-shrink: 0;
+  width: 100%;
+  max-width: 334px;
+  min-height: 596px;
   text-align: left;
 }
 
 .card {
-  min-height: 596px;
   position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px;
+  min-height: 596px;
+  padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -190,79 +196,68 @@ ul {
 }
 
 .card__title {
-  font-size: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
   z-index: 2;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.2;
   text-decoration: underline;
-  line-height: 120%;
+  text-transform: uppercase;
 }
 
 .card__text {
-  font-size: 20px;
-  line-height: 120%;
-  color: white;
   z-index: 2;
-  text-align: left;
-}
-
-.card-link {
-  position: absolute;
-  z-index: 1;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: rgba(0, 0, 0, 0.6);
   transition: opacity 0.3s ease;
-  z-index: 0;
 }
 
 .lots__look-more-link {
   display: inline-block;
-  margin-top: 27px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-  margin-left: 64px;
-}
-
-.lots__look-more-link:hover {
-  text-decoration: underline;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .about {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding-top: 150px;
-  background-color: white;
-  padding-bottom: 180px;
-  align-items: start;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  padding: 0px 24px 160px;
 }
 
 .about__column {
-  grid-column: 2 / 4;
-  margin-top: 20px;
-  width: 690px;
-  height: 560px;
+  justify-self: end;
+  margin-top: 45px;
 }
 
 .about__logo {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 240px;
+  min-height: 240px;
+  margin: 35px auto 0px;
+  border-radius: 50%;
+  background-color: #000000;
+
 }
 
 .about__logo-image {
   width: 148px;
   height: 114px;
+  text-align: center;
 }
 
 .about__text {
@@ -276,8 +271,8 @@ ul {
 }
 
 .about__title {
-  font-size: 40px;
   margin: 90px 0 100px 0;
+  font-size: 40px;
 }
 
 .about__paragraph {
@@ -286,42 +281,44 @@ ul {
   font-size: 20px;
 }
 
+.about__paragraph--first{
+  max-width: 670px;
+}
+
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background: white;
-  font-size: 18px;
-  align-items: start;
+  padding: 0px 50px 82px;
 }
 
 .address__footer {
-  max-width: 265px;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-self: center;
-  align-self: start;
   row-gap: 3px;
+  width: 100%;
+  max-width: 265px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.24;
 }
 
 .footer__menu {
   text-align: center;
+  
 }
 
 .footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  font-size: 18px;
+  line-height: 1.07;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  line-height: 0.5;
-}
-
-.footer__menu-list-item:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .footer__menu-link {
-  text-decoration: underline;
   color: black;
+  text-decoration: underline;
 }
 
 .footer__menu-link_active {
@@ -330,12 +327,10 @@ ul {
 
 .footer__social-list {
   display: flex;
-  justify-self: center;
-  align-self: start;
+  justify-self: end;
   gap: 48px;
   list-style: none;
-  padding: 0;
-  margin: 0;
+
 }
 
 .footer__social-icon {
