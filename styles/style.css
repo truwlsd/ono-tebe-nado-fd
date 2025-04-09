@@ -251,7 +251,6 @@ ul {
   margin: 35px auto 0px;
   border-radius: 50%;
   background-color: #000000;
-
 }
 
 .about__logo-image {
@@ -281,7 +280,7 @@ ul {
   font-size: 20px;
 }
 
-.about__paragraph--first{
+.about__paragraph--first {
   max-width: 670px;
 }
 
@@ -304,7 +303,6 @@ ul {
 
 .footer__menu {
   text-align: center;
-  
 }
 
 .footer__menu-list {
