@@ -46,7 +46,7 @@ ul {
   justify-self: end;
 }
 
-.header__contacts-text {
+.address__text {
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -79,14 +79,6 @@ ul {
   background-image: url('../images/cover.jpg');
   background-position: center;
   background-size: cover;
-}
-
-.cover::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.6);
 }
 
 .cover-title {
@@ -215,9 +207,8 @@ ul {
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: 0;
+  z-index: -1;
   background: rgba(0, 0, 0, 0.6);
-  transition: opacity 0.3s ease;
 }
 
 .lots__look-more-link {
@@ -280,7 +271,7 @@ ul {
   font-size: 20px;
 }
 
-.about__paragraph--first {
+.about__paragraph--width {
   max-width: 670px;
 }
 
